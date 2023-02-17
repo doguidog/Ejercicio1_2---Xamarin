@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenidos a la APP 1-2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Nombre" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="10"/>
+        <Entry x:Name="txtnombre" Placeholder="Escriba su nombre"/>
+
+        <Label Text="Apellidos" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="10"/>
+        <Entry x:Name="txtapellidos" Placeholder="Escriba su apellido"/>
+
+        <Label Text="Edad" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="10"/>
+        <Entry x:Name="txtedad" Placeholder="Escriba su edad" Keyboard="Numeric"/>
+
+        <Label Text="Correo Electronico" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="10"/>
+        <Entry x:Name="txtcorreo" Placeholder="Escriba su correo" Keyboard="Email"/>
+
+        <Button x:Name="btnenviar" Text="Enviar" TextColor="White" FontSize="21" Padding="10" Clicked="btnenviar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
